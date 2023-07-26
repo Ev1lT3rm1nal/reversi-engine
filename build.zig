@@ -60,5 +60,5 @@ const cwd = std.fs.path.dirname(current_file()).?;
 const sep = std.fs.path.sep_str;
 
 pub fn addTo(exe: *std.build.LibExeObjStep) void {
-    exe.addAnonymousModule("raylib", .{ .source_file = .{ .path = cwd ++ sep ++ "raylib.zig" } });
+    exe.addAnonymousModule("reversi", .{ .source_file = .{ .path = cwd ++ sep ++ "src/main.zig" } });
 }
